@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📋 Packing List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Button: Show All -->
+    <Button
+        android:id="@+id/btnShowAll"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Show Full Packing List"
+        android:textSize="15sp"
+        android:backgroundTint="#1976D2"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Button: Show High Qty (>=2) -->
+    <Button
+        android:id="@+id/btnShowHighQty"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Show Items with Qty ≥ 2"
+        android:textSize="15sp"
+        android:backgroundTint="#F57C00"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Scrollable output area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press a button above to view your packing list."
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:fontFamily="monospace"
+            android:lineSpacingMultiplier="1.4"/>
+
+    </ScrollView>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="⬅  Back to Main Screen"
+        android:textSize="15sp"
+        android:backgroundTint="#455A64"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name *"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. T-Shirts"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category *"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Clothing, Toiletries, Documents"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity *"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. 3"
+        android:inputType="number"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments (optional)"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Any notes about this item"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:maxLines="3"/>
+
+</LinearLayout>
